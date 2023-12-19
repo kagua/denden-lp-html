@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+
+<title>ミライの本のつくり方  | でんでんランディングページ デモサイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="description" content="※これはでんでんランディングページのデモを目的とした架空の商品です。 このテーマを見る...">
+<meta name="keywords" content="ebook, epub, 電書ちゃん">
+
+<link rel="canonical" href="https://www.kagua.biz/honhon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" media="screen" href="./styles.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+<!-- ◆#a89600 #a89600 を置換せよ -->
+<style>
+
+a {
+color: #a89600;
+}
+a:hover,
+a:focus {
+color: #a89600;
+}
+.bubble {
+background: #a89600;
+}
+.bubble:after {
+border-color: #a89600 transparent;
+}
+#header:before {
+      background-image: url(https://www.kagua.biz/honhon/cover1.jpg);
+      
+      }
+#header #header-inner {
+
+}
+#catchphrase-container-inner {
+}
+#header-bottom .creators-list > li {
+color: #a89600;
+}
+.section-lead {
+color: #a89600;
+}
+.section-inverse {
+background: #a89600;
+}
+.feature-image-placeholder {
+color: #a89600;
+}
+.character-desc {
+border-color: #a89600;
+}
+.review-container .review-title {
+color: #a89600;
+}
+.review-container .reviewer-icon-placeholder {
+color: #a89600;
+}
+.review-container .reviewer-name {
+color: #a89600;
+}
+.review-container .reviewer-name a:hover,
+.review-container .reviewer-name a:active {
+color: #a89600;
+}
+.role {
+background-color: #a89600;
+}
+#bio a .fa-stack:hover,
+#bio a .fa-stack:focus {
+color: #a89600;
+}
+.separator-for-col-sm-4:before,
+.separator-for-col-sm-4:after {
+content: " ";
+display: table;
+}
+.works-separator-for-col-sm-4:after {
+clear: both;
+}
+.works-separator-for-col-sm-4:before,
+.works-separator-for-col-sm-4:after {
+content: " ";
+display: table;
+}
+.works-separator-for-col-sm-4:after {
+clear: both;
+}
+#social{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<header id="header">
+<h1 class="sr-only">ミライの本のつくり方</h1><div id="header-inner">
+<div class="container"><div class="rows"><div id="catchphrase-container" class="col-sm-7"><div id="catchphrase-container-inner">
+
+<p class="catchphrase"><span class="inline-block">Webに恋した</span><br><span class="inline-block">ミライの本を</span><span class="inline-block">夢見る</span></p>
+
+<p class="subphrase hidden-xs"><span class="inline-block">&#9472;&#9472; ねぇ？</span> <span class="inline-block">あたしのために</span><span class="inline-block">本を作ってよ</span><br><span class="inline-block">あなたにしか作れない</span><span class="inline-block">特別な本&#9472;&#9472;</span></p>
+
+<hr>
+
+<div class="hidden-xs">
+
+<p class="book-collection-title"><span class="book-collection-title-label">デモコンテンツ</span></p> 
+
+<p class="book-title">ミライの本のつくり方</p>
+
+<ul class="list-inline creators-list">
+<li>カグア！</li> 
+<li>クリエイターエコノミーニュース</li> 
+</ul>
+</div>
+<div class="btn-container hidden-xs">
+<ul class="list-inline">
+<li><p><a href="#preview" class="btn btn-default btn-lg">試し読みする</a></p></li> 
+<li><p><a href="#acquisition" class="btn btn-default btn-lg">この本を入手</a></p></li>
+</ul></div></div> 
+</div> 
+</div>
+</div>
+</div>
+</header>
+
+<div id="header-bottom"><div class="rows"><div class="container"><div id="cover-image-container" class="col-sm-push-7 col-sm-5"><img id="cover-image" src="./cover1.jpg" alt="" class="img-thumbnail"><div class="visible-xs"><p class="book-collection-title"><span class="book-collection-title-label">デモコンテンツ</span></p> 
+
+<p class="book-title">
+ミライの本のつくり方
+</p> 
+
+<hr class="context-break"><ul class="list-inline creators-list">
+<li>カグア！</li> 
+<li>クリエイターエコノミーニュース</li> 
+</ul><div class="btn-container"><ul class="list-inline">
+<li><p><a href="#preview" class="btn btn-success btn-lg">試し読みする</a></p></li> 
+<li><p><a href="#acquisition" class="btn btn-primary btn-lg">この本を入手</a></p></li>
+</ul></div></div> 
+</div>
+
+<div id="social" class="col-sm-pull-5 col-sm-7">
+<!-- ◆ -->
+<div class="container mt-5">
+  <!-- Twitter Button -->
+  <button class="btn btn-primary" onclick="shareTwitter()">X（旧ツイッター）</button>
+
+  <!-- Hatena Button -->
+  <button class="btn btn-success" onclick="shareHatena()">はてな</button>
+
+  <!-- Copy URL Button -->
+  <button class="btn btn-info" onclick="copyURL()">URLをコピー</button>
+</div>
+
+<script>
+  function shareTwitter() {
+    var url = 'https://www.kagua.biz/honhon/';
+    window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(url));
+  }
+
+  function shareHatena() {
+    var url = 'https://www.kagua.biz/honhon/';
+    window.open('https://b.hatena.ne.jp/entry/' + encodeURIComponent(url));
+  }
+
+  function copyURL() {
+    var urlToCopy = 'https://www.kagua.biz/honhon/';
+    
+    // Create a temporary input element and copy the URL to the clipboard
+    var tempInput = document.createElement('input');
+    tempInput.value = urlToCopy;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    alert('URLをクリップボードにコピーしました！ ' + urlToCopy);
+  }
+</script>
+
+</div> 
+</div></div></div>
+
+<!-- セクション：内容紹介 --> 
+<section id="description" class="section-inverse">
+<div class="container dd-container">
+<h2 class="section-title text-center">STORY</h2>
+
+<p class="section-lead text-center"><span class="inline-block">新ジャンル登場</span><br><span class="inline-block">それは</span><span class="inline-block">電子書籍な青春!!</span></p>
+
+<div class="description-body"><p class="text-center"><strong>※これは<a href="http://lp.denshochan.com/">でんでんランディングページ</a>のデモを目的とした架空の商品です。</strong></p><p class="text-center"><a class="btn btn-default" href="https://github.com/denshoch/LandingPages/tree/gh-pages/narrative">このテーマを見る</a></p><p>コンピュター好きの少女・鹿峰乃窓はネットサーフィンの最中に《電書ちゃん》と名乗る奇妙な霊的存在に遭遇する。電書ちゃんは乃窓に「本」を作って欲しいと依頼するが、それはデジタル空間で読める本＝電子書籍のことだった。困惑する乃窓が相談に訪れたのは、昨年廃部になった文芸部の元部長・垣生陸。彼は刊行の途絶えていた部誌を、電子書籍として復活させたい、と願う。</p><p>
+この日、電書ちゃんを顧問とする秘密の部活動《電脳文芸部》が発足した。刊行目標を二ヶ月後に控えた学園祭に定め結束する三人。しかしメンバーたちはそれぞれ、人には言えない秘密を抱えているのだった。</p>
+
+<p>電子書籍ブームの歓声が微かに聞こえてくる2010年代初頭の地方都市を舞台に、テクノロジーとメディアが交差する青春ハートフルストーリーここに開幕!!</p>
+
+</div></div></section>
+
+<!-- セクション：動画 -->
+<section id="movie" class="section-dark"><div class="container dd-container"><h2 class="section-title text-center">MOVIE</h2> 
+<div class="embed-responsive embed-responsive-16by9">
+<!-- ◆動画 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LQkj-Mo18a8?si=Qlxe213n94TpjujK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> 
+</div></section>
+
+<!-- セクション：オーディオ
+<section id="movie" class="section-light"><div class="container dd-container"><h2 class="section-title text-center">AUDIO</h2> 
+<div class="audio-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169991738&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></div> 
+</div></section>  -->
+
+<!-- セクション：特徴紹介 -->
+<section id="features"><div class="container dd-container-wide"><h2 class="h4 section-title text-center">FEATURES</h2>
+
+<p class="h1 text-center section-lead">
+<span class="inline-block">業界関係者の</span><span class="inline-block">話題を独占!!</span></p>
+
+<div class="row"><div class="col-md-4"><div class="media"><div class="pull-left text-center"><div class="feature-image-placeholder"><i class="fa fa-smile-o"></i></div> 
+ </div><div class="media-body">
+
+<h4 class="media-heading feature-heading">
+<span class="inline-block">面白くって</span>
+<span class="inline-block">ためになる</span>
+</h4>
+
+<div class="feature-description">
+<p>電子書籍の「なぜ？」を部員たちの成長物語とともに面白おかしく学べます。読み終える頃にはあなたも電子書籍マスターになっているかも!?</p>
+
+</div></div></div></div><div class="col-md-4"><div class="media"><div class="pull-left text-center"><div class="feature-image-placeholder"><i class="fa fa-trophy"></i></div></div>
+
+<div class="media-body">
+<h4 class="media-heading feature-heading">ランキング初登場1位!!</h4>
+<div class="feature-description"><p>Candleストアで発売直後に、趣味カテゴリのランキング1位に3時間だけ輝きました。嬉しくて著者はスクリーンショットを保存しています。</p></div>
+
+</div></div></div>
+<div class="col-md-4"><div class="media"><div class="pull-left text-center"><div class="feature-image-placeholder"><i class="fa fa-info-circle"></i></div></div>
+
+<div class="media-body">
+<h4 class="media-heading feature-heading">あの人気ブログのスピンアウト作品</h4>
+<div class="feature-description"><p>電子書籍の業界関係者の間でカルト的な人気を誇るブログ「電書ちゃんねる」のスピンアウト作品。いっしょに読めば楽しさ２倍。</p></div>
+
+</div></div></div></div></div></section> 
+
+<!-- セクション：登場人物紹介 --> 
+<hr class="context-break"> 
+<section id="characters"><div class="container dd-container">
+
+<h2 class="h4 section-title text-center">CHARACTERS</h2>
+
+<p class="h1 text-center section-lead"><span class="inline-block">電脳文芸部</span><span class="inline-block">全員集合!!</span></p>
+
+<div class="row"><div class="character-container col-sm-4 container center-block text-center"><img style="width: 128px;" src="./cover1.jpg" alt="" class="img-thumbnail">
+
+<div class="h5 character-name">電書ちゃん</div><div class="character-desc">ウェブ空間で稀に遭遇する少女の容姿をした霊的存在。鹿峰乃窓に本の制作を依頼するが、その目的は不明。降宮高校電脳文芸部の顧問に就任し、部員たちの指導に大ハッスル。わがままで食い意地が張っている。</div></div>
+
+<div class="character-container col-sm-4 container center-block text-center"><img style="width: 128px;" src="./cover1.jpg" alt="" class="img-thumbnail">
+
+<div class="h5 character-name">鹿峰乃窓</div>
+<div class="character-desc">かのみね・のまど。降宮高校二年生の女子生徒。学業も交友関係もパッとしないが、コンピューターが好きでハッカーやギークと呼ばれる人たちに憧れている。電書ちゃんとの遭遇をきっかけに電脳文芸部の技術要員となる。</div></div>
+
+<div class="separator-for-col-sm-6"></div> 
+<div class="character-container col-sm-4 container center-block text-center"><img style="width: 128px;" src="./cover1.jpg" alt="" class="img-thumbnail">
+
+<div class="h5 character-name">垣生陸</div><div class="character-desc">はぶ・りく。降宮高校二年生の男子生徒。一年次に所属していた文芸部は廃部になり失意に暮れていた。文芸部に相応しからぬ豪放な容姿と性格の持ち主。中学時代はかなり荒れていたとの噂あり。電脳文芸部の部長を務める。</div></div>
+</div></div></section> 
+
+<!-- セクション：試し読み -->
+<!-- セクション：詳細情報 -->
+<section id="info" class="section-inverse"><div class="container dd-container"><h2 class="h4 section-title text-center">DETAILS</h2> 
+<p class="h1 text-center section-lead"><span class="inline-block">標準フォーマット</span><span class="inline-block">準拠！</span><span class="inline-block">DRMフリー版も</span><span class="inline-block">あります</span></p>
+
+<table class="table table-condenced"><tr><th>タイトル</th>
+<td>
+デモコンテンツ<br> 
+ミライの本のつくり方<br> 
+</td></tr>
+<tr><th>著者</th>
+<td><ul class="list-unstyled">
+<li>カグア！</li> 
+<li>クリエイターエコノミーニュース</li> 
+</ul></td></tr> 
+<tr><th>発行日</th><td>2014-09-20</td></tr> 
+<tr><th>発行者</th>
+<td><a href="http://densho.hatenablog.com/">電書ちゃんねる</a></td> 
+</tr> 
+<tr><th>販売価格</th><td><p>999,999 円</p>
+<p><a href="#acquisition" class="btn btn-default btn-sm">この本を入手</a></p>
+</td></tr> 
+<tr><th>ISBN</th><td>XXX-XXXXXXXXXX</td></tr>
+<tr><th>フォーマット</th><td>EPUB / Kindle本</td></tr>
+</table></div></section>
+
+<!-- セクション：自由記述 --> 
+<section id="free-writing" class="section"><div class="container dd-container">
+<h2 class="h4 section-title text-center">MESSAGE</h2>
+
+<p class="h1 text-center section-lead">読者のみなさんへ</p>
+<div class="free-writing-body-container"><p>鶴嘴でした事はもし場合をかつてなあるなけれ。とにかく岡田さんが経験権利こう附着にもった幾分その言い方私か独立がというお教育ましですなたて、そうした今は私か同人個人で出て、岡田さんのものが文芸のそれにいやしくも今学習とするが我々文芸をお発会にあるようにもっとおお話しにしだだって、よほどしっくり講演で帰っないてくれます訳にしたう。もしくはもしくはお倫理を炙っ気もそう余計としですから、同じ異存にも思いましてに対して自分があるといただきますう。</p><p>ほぼどうもはもう個人といういずので、私をも今度中までこれのごお話しはないしいるなた。私はほぼ焦燥の事をご拡張も行かてならだですんたから、一十の先生を別段洗わらしくとして満足んから、すなわちその事の秩序を救うれるので、私かがあなたの資格が就職へするがいありのないなと経過して助力できるいですな。</p>
+<p>犠牲がただ張さんをしかしながらこう保つたのたたで。</p>
+</div></div></section> 
+
+<hr class="context-break"> 
+
+<!-- セクション：レビュー --> 
+<section id="reviews" class="section"><div class="container dd-container">
+
+<h2 class="h4 section-title text-center">REVIEWS</h2> 
+
+<p class="h1 text-center section-lead">続々と反響の声が!!</p> 
+<div class="review-container"><p class="review-title">まったりとしてコクがある</p> 
+<div class="bubble"><blockquote>まったりとしてコクがありながらも、すっきりした喉越しです。<footer><a href="#">ブックソムリエの読書ログ</a></footer></blockquote></div>
+
+<div class="media reviewer-container"><div class="pull-left"><img style="width: 48px;" src="./cover1.jpg" alt="" class="media-object img-circle"></div>
+
+<div class="media-body"><div class="reviewer-name"><a href="#">モブ美さん</a><span class="reviewer-role">ブロガー</span></div></div></div></div>
+
+<hr class="context-break"><div class="review-container"><p class="review-title">たぶん全米が泣く</p>
+<div class="bubble"><blockquote>感動しました。最後に電書ちゃんが親指を立てながら溶鉱炉に沈んでいくシーンは涙無しには見られませんでした。全米が読んだら余裕で泣いちゃうと思う。<footer><a href="#">全米日記</a></footer></blockquote></div>
+
+<div class="media reviewer-container"><div class="pull-left"><img style="width: 48px;" src="./cover1.jpg" alt="" class="media-object img-circle"></div>
+
+<div class="media-body"><div class="reviewer-name"><a href="#">モブ江たん</a><span class="reviewer-role">全米評論家</span></div></div></div></div></div></section> 
+
+
+<!-- セクション：電子書籍とのつきあい方 -->
+<section id="how-to-read" class="section-light"><div class="container dd-container">
+<h2 class="h4 section-title text-center">HOW TO READ EBOOKS</h2>
+
+<p class="h1 text-center section-lead"><span class="inline-block">電子書籍との</span><span class="inline-block">つきあい方</span></p>
+
+<div class="free-writing-body-container">
+<ul>
+<li>専用端末がないと読めない？</li>
+<li>端末が壊れたら買った本は無駄になる？</li>
+<li>何に気をつければいいの？</li>
+</ul>
+
+<p>はじめて電子書籍に触れる人の、よくある疑問に答えます。</p>
+
+<p class="text-center"><a href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank" class="btn btn-info btn-lg"><i class="fa fa-external-link"></i>電子書籍とのつきあい方</a></p>
+</div></div></section> 
+
+<!-- セクション：購入／ダウンロード --> 
+<section id="acquisition" class="section-inverse"><div class="container dd-container">
+<h2 class="h4 section-title text-center">GET IT NOW!</h2> 
+
+<p class="h1 text-center section-lead">怒涛のマルチストア展開!!</p>
+<p class="text-center">販売価格<span class="price">999,999</span>円</p>
+<p class="text-center small">価格はストアのセールやキャンペーンなどによって変動する場合があります。</p>
+
+<hr>
+
+<ul class="list-inline text-center"><li><p><a href="#" class="btn btn-primary btn-lg">Candleストア</a></p></li> 
+<li><p><a href="#" class="btn btn-primary btn-lg">いいね書房</a></p></li> 
+<li><p><a href="#" class="btn btn-primary btn-lg">Boko</a></p></li> 
+<li><p><a href="#" class="btn btn-primary btn-lg">パブログのブクー</a></p></li> 
+<li><p><a href="#" class="btn btn-primary btn-lg">愛ブックスとは？</a></p></li> 
+<li><p><a href="#" class="btn btn-primary btn-lg">BQQK</a></p></li> 
+</ul>
+</div></section>
+
+<!-- セクション：関連コンテンツ -->
+<section id="related-contents" title="Related works"><div class="container dd-container"><h2 class="h4 section-title text-center">RELATED WORKS</h2> 
+<p class="h1 text-center section-lead"><span class="inline-block">電書ちゃんねるの</span><br><span class="inline-block">ちょっと素敵な</span><span class="inline-block">ツールたち</span></p>
+
+<div class="row"><div class="col-sm-4"><div class="thumbnail text-center"><a href="http://conv.denshochan.com/" title="でんでんコンバーター" class="target"><div style="background-image: url(https://www.kagua.biz/honhon/cover1.jpg);" class="thumbnail-container"></div></a><div class="caption"><a href="http://conv.denshochan.com/" class="thumbnail-title">でんでんコンバーター</a></div></div></div>
+
+<div class="col-sm-4"><div class="thumbnail text-center"><a href="http://conv.denshochan.com/markdown/" title="でんでんマークダウン"><div style="background-image: url(https://www.kagua.biz/honhon/cover1.jpg);" class="thumbnail-container"></div></a><div class="caption"><a href="http://conv.denshochan.com/markdown/" class="thumbnail-title">でんでんマークダウン</a></div></div></div>
+
+<div class="col-sm-4"><div class="thumbnail text-center"><a href="http://edit.denshochan.com/" title="でんでんエディター"><div style="background-image: url(https://www.kagua.biz/honhon/cover1.jpg);" class="thumbnail-container"></div></a><div class="caption"><a href="http://edit.denshochan.com/" class="thumbnail-title">でんでんエディター</a></div></div></div> 
+</div></div></section><hr class="context-break">
+
+<!-- セクション：著者紹介 --> 
+<section id="bio"><div class="container dd-container"><h2 class="h4 section-title text-center">CREATED BY</h2> 
+<p class="h1 text-center section-lead"><span class="inline-block">電書ちゃんねるの</span><span class="inline-block">懲りない面々</span></p> 
+<div class="panel panel-default"><div class="panel-body"><ul class="media-list"><li class="media"><div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="https://www.kagua.biz/honhon/cover1.jpg" alt="" class="media-object img-circle"></div><div class="media-body"><div class="media-heading"><span class="role">著者</span>カグア！<small>@creator_enews</small></div>
+
+<ul class="list-inline">
+<li><a href="http://densho.hatenablog.com/" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://twitter.com/lost_and_found" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://facebook.com/hiroshi.takase" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://plus.google.com/+HiroshiTakase" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+
+<div class="author-description">電書ちゃんねる管理人兼雑用係。混迷を極める業界の中で右往左往。お前の明日はどっちだ！？　どういうわけかEPUB制作ツール「でんでんコンバーター」でJEPA電子出版アワード2013の大賞を受賞する羽目に。訳書に『EPUB 3とは何か？』（オライリージャパン）がある。</div></div></li>
+
+<li class="media"><div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="./cover1.jpg" alt="" class="media-object img-circle"></div><div class="media-body"><div class="media-heading"><span class="role">総監督 (自称)</span>カグア！<small>吉田喜彦</small></div>
+
+<ul class="list-inline">
+<li><a href="http://densho.hatenablog.com/" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://twitter.com/denshochan" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+
+<div class="author-description">電書ちゃんねるの支配者にしてマスコットキャラクター。君臨すれども統治せず。電子書籍の世界を案内してくれる。気まぐれ、わがまま、毒舌家。基本的に人の話を聞かない。お菓子と紅茶が好きらしいが、実は味覚が破綻しているので何でも美味しく食べる。</div></div>
+</li>
+</ul>
+</div></div></div></section> 
+
+<hr class="context-break">
+
+<section id="contact">
+<div class="container dd-container">
+<h2 class="h4 section-title text-center">CONTACT</h2>
+<div class="contact-form-container">
+
+<!-- ◆問い合わせフォーム -->
+
+<p class="text-center"><a href="https://www.kagua.biz/mailform" target="_blank" class="btn btn-info btn-lg"><i class="fa fa-external-link"></i>すぐに問い合わせる</a></p>
+
+</div>
+</div></section>
+
+<!-- Schema.org JSON-LD --> 
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Book",
+"isbn": "XXX-XXXXXXXXXX",
+"bookFormat": "http://schema.org/EBook",
+"inLanguage": "ja",
+"datePublished": "2014-09-20",
+"publisher": {"name": "電書ちゃんねる", "url": "http://densho.hatenablog.com/"},
+"author": [
+{ "name": "ろす", "description": "電書ちゃんねる管理人兼雑用係。混迷を極める業界の中で右往左往。お前の明日はどっちだ！？　どういうわけかEPUB制作ツール「でんでんコンバーター」でJEPA電子出版アワード2013の大賞を受賞する羽目に。訳書に『EPUB 3とは何か？』（オライリージャパン）がある。", "image": "https://www.kagua.biz/honhon/cover1.jpg", "url": "http://densho.hatenablog.com/" }
+],
+"contributor": [
+{ "name": "電書ちゃん", "description": "電書ちゃんねるの支配者にしてマスコットキャラクター。君臨すれども統治せず。電子書籍の世界を案内してくれる。気まぐれ、わがまま、毒舌家。基本的に人の話を聞かない。お菓子と紅茶が好きらしいが、実は味覚が破綻しているので何でも美味しく食べる。", "image": "https://www.kagua.biz/honhon/cover1.jpg", "url": "http://densho.hatenablog.com/" }
+],
+"url": "https://www.kagua.biz/honhon",
+"image": "https://www.kagua.biz/honhon/cover1.jpg",
+"description": "※これはでんでんランディングページのデモを目的とした架空の商品です。 このテーマを見る...",
+"keywords": "ebook, epub, 電書ちゃん",
+"name": "ミライの本のつくり方 "
+}
+</script> 
+
+<footer id="footer"><div class="container dd-container text-center"><p>Special Thanks</p><p>Copyright(C) 2014-2024 Densho Channel</p> 
+<p>電書ちゃんねるは電子出版に関する記事執筆とツール開発を中心に活動する任意団体です。</p><div><small><a href="http://lp.denshochan.com/">Theme</a> designed by <a href="http://denshochan.com/">Densho Channel</a>.</small></div></div></footer>
+
+</body></html>
