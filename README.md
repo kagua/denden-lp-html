@@ -3,6 +3,12 @@
 
 ![image](https://github.com/kagua/denden-lp-html/assets/631291/d2e38082-aa6a-4ebb-a8b2-b3713e15921c)
 
+## 実際にHTMLで見られるページ
+
+こちらがデモページとなります。色まわりのデザインのバランスが悪いのは私のセンスがないためです。
+
+https://www.kagua.biz/honhon/
+
 ## でんでんランディングページはTumblr向け
 
 でんでんランディングページ | セルフパブリッシャーのためのTumblrテーマ
@@ -28,5 +34,7 @@ https://teineini.net/20190429-kdp-landingpage-start/
 とくにありません。
 
 ソースを見て、それっぽいところを改変してお使いください。
+
+ろすさん、もし不適切でしたらおっしゃって下さい。取り下げます。
 
 以上
