@@ -1,7 +1,7 @@
-![image](https://github.com/kagua/denden-lp-html/assets/631291/d2e38082-aa6a-4ebb-a8b2-b3713e15921c)
-
 # denden-lp-html
  Kindle本の書籍紹介ランディングページのHTML版です。
+
+![image](https://github.com/kagua/denden-lp-html/assets/631291/d2e38082-aa6a-4ebb-a8b2-b3713e15921c)
 
 ## でんでんランディングページはTumblr向け
 
