@@ -1,7 +1,8 @@
 # denden-lp-html
+
  Kindle本の書籍紹介ランディングページのHTML版です。
 
-![image](https://github.com/kagua/denden-lp-html/assets/631291/d2e38082-aa6a-4ebb-a8b2-b3713e15921c)
+ ![Freckle Face](https://github.com/kagua/denden-lp-html/assets/631291/ae7b2b1a-e171-4b6b-9c7c-3bbed5603f81)
 
 ## 実際にHTMLで見られるページ
 
@@ -14,6 +15,8 @@ https://www.kagua.biz/honhon/
 でんでんランディングページ | セルフパブリッシャーのためのTumblrテーマ
 
 https://lp.denshochan.com/
+
+![image](https://github.com/kagua/denden-lp-html/assets/631291/d2e38082-aa6a-4ebb-a8b2-b3713e15921c)
 
 おおもとのファイルはこちらを使わせて頂きました。ロスさんは本当に日本の電子書籍界で無くてはならない人で、ご存知ない方はぜひ見てみてください。
 
